@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha97 - Car Rent Website</title>
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-alice-blue-1 overflow-x-hidden">
+<header class="fixed top-0 left-0 w-full z-40 transition-shadow bg-alice-blue-1" data-header>
+    <div class="container mx-auto flex justify-between items-center h-16 px-4">
+        <a href="#" class="logo"><img src="logo1.png" alt="Alpha97 Logo"></a>
+        <nav class="navbar hidden md:block" data-navbar>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="text-independence hover:text-carolina-purple">Home</a></li>
+                <li><a href="#featured-car" class="text-independence hover:text-carolina-purple">Explore cars</a></li>
+                <li><a href="#about" class="text-independence hover:text-carolina-purple">About us</a></li>
+                <li><a href="#blog" class="text-independence hover:text-carolina-purple">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="flex items-center space-x-4">
+            <div class="text-center">
+                <a href="tel:1234567890" class="text-independence">1234567890</a>
+                <span class="text-independence text-xs">Mon - Fri: 9:00 am - 6:00 pm</span>
+            </div>
+            <a href="#featured-car" class="btn bg-carolina-purple text-white px-4 py-2 rounded">Explore cars</a>
+            <a href="#" class="btn bg-white text-independence"><ion-icon name="person-outline"></ion-icon></a>
+            <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu"><span class="block w-6 h-1 bg-independence mb-1"></span><span class="block w-6 h-1 bg-independence mb-1"></span><span class="block w-6 h-1 bg-independence"></span></button>
+        </div>
+    </div>
+</header>
+<main>
+    <article>
+        <section class="hero pt-32" id="home">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl font-bold text-space-cadet">The easy way to takeover a lease</h2>
+                <p class="text-independence mb-8">Live in New York, New Jersey and Connecticut!</p>
+                <form action="" class="bg-gradient-to-t from-alice-blue-2 to-alice-blue-3 border border-white rounded-lg shadow-lg p-6">
+                    <div class="mb-4">
+                        <label for="input-1" class="block text-manatee mb-2">Car, model, or brand</label>
+                        <input type="text" name="car-model" id="input-1" class="w-full border border-gray-300 rounded p-2 focus:outline-none focus:ring-2 focus:ring-carolina-purple" placeholder="What car are you looking?">
+                    </div>
+                    <div class="mb-4">
+                        <label for="input-2" class="block text-manatee mb-2">Max. monthly payment</label>
+                        <input type="text" name="monthly-pay" id="input-2" class="w-full border border-gray-300 rounded p-2 focus:outline-none focus:ring-2 focus:ring-carolina-purple" placeholder="Add an amount in $">
+                    </div>
+                    <div class="mb-4">
+                        <label for="input-3" class="block text-manatee mb-2">Make Year</label>
+                        <input type="text" name="year" id="input-3" class="w-full border border-gray-300 rounded p-2 focus:outline-none focus:ring-2 focus:ring-carolina-purple" placeholder="Add a minimal make year">
+                    </div>
+                    <button type="submit" class="btn bg-carolina-purple text-white w-full py-2 rounded">Search</button>
+                </form>
+            </div>
+        </section>
+        <section class="featured-car py-12" id="featured-car">
+            <div class="container mx-auto">
+                <h2 class="text-2xl font-semibold text-space-cadet mb-6">Featured cars</h2>
+                <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Repeat this block for each car -->
+                    <li>
+                        <div class="bg-gradient-to-t from-alice-blue-2 to-alice-blue-3 border border-white rounded-lg shadow-lg">
+                            <figure class="overflow-hidden rounded-t-lg"><img src="car-1.jpg" alt="Toyota RAV4 2021" class="w-full h-40 object-cover"></figure>
+                            <div class="p-4">
+                                <h3 class="text-lg font-semibold text-space-cadet"><a href="#" class="hover:text-carolina-purple">Toyota RAV4</a></h3>
+                                <data class="year" value="2021">2021</data>
+                                <ul class="mt-2 space-y-1">
+                                    <li class="flex items-center"><ion-icon name="people-outline"></ion-icon><span class="ml-2">4 People</span></li>
+                                    <li class="flex items-center"><ion-icon name="flash-outline"></ion-icon><span class="ml-2">Hybrid</span></li>
+                                    <li class="flex items-center"><ion-icon name="speedometer-outline"></ion-icon><span class="ml-2">6.1km / 1-litre</span></li>
+                                    <li class="flex items-center"><ion-icon name="hardware-chip-outline"></ion-icon><span class="ml-2">Automatic</span></li>
+                                </ul>
+                                <div class="flex justify-between items-center mt-4">
+                                    <p class="text-lg font-semibold text-space-cadet"><strong>$440</strong> / month</p>
+                                    <button class="fav-btn bg-beau-blue text-blue-jeans rounded-full p-2"><ion-icon name="heart-outline"></ion-icon></button>
+                                    <button class="btn bg-carolina-purple text-white rounded">Rent now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- End of car block -->
+                </ul>
+            </div>
+        </section>
+        <section class="get-start py-12">
+            <div class="container mx-auto">
+                <h2 class="text-2xl font-semibold text-space-cadet mb-6">Get started with 4 simple steps</h2>
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <li class="bg-white border border-white rounded-lg shadow-lg p-4 hover:bg-alice-blue-2 transition">
+                        <div class="bg-mimi-pink text-deep-cerise h-12 w-12 flex items-center justify-center rounded-full mb-4"><ion-icon name="person-add-outline"></ion-icon></div>
+                        <h3 class="font-semibold text-space-cadet mb-2">Create a profile</h3>
+                        <p class="text-independence">If you are going to use a passage of Lorem Ipsum, you need to be sure.</p>
+                        <a href="#" class="text-carolina-purple">Get started</a>
+                    </li>
+                    <!-- Repeat for other steps -->
+                </ul>
+            </div>
+        </section>
+        <section class="blog py-12" id="blog">
+            <div class="container mx-auto">
+                <h2 class="text-2xl font-semibold text-space-cadet mb-6">Our Blog</h2>
+                <ul class="flex overflow-x-auto space-x-4">
+                    <!-- Repeat this block for each blog post -->
+                    <li class="bg-alice-blue-2 border border-white rounded-lg shadow-lg">
+                        <figure class="overflow-hidden rounded-t-lg"><img src="blog-1.jpg" alt="Opening of new offices of the company" class="w-full h-40 object-cover"></figure>
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold text-space-cadet"><a href="#" class="hover:text-carolina-purple">Opening of new offices of the company</a></h3>
+                            <div class="flex justify-between items-center">
+                                <div class="text-independence"><ion-icon name="time-outline"></ion-icon><time datetime="2022-01-14">January 14, 2022</time></div>
+                                <div class="text-independence"><ion-icon name="chatbubble-ellipses-outline"></ion-icon><data value="114">114</data></div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- End of blog block -->
+                </ul>
+            </div>
+        </section>
+    </article>
+</main>
+<footer class="bg-alice-blue-4 text-independence">
+    <div class="container mx-auto py-12">
+        <div class="flex flex-wrap justify-between">
+            <div class="footer-brand">
+                <a href="#" class="logo"><img src="logo1.png" alt="Alpha97 Logo"></a>
+                <p class="text-xs">Search for cheap rental cars in New York. With a diverse fleet of 19,000 vehicles, Waydex offers its consumers an attractive and fun selection.</p>
+            </div>
+            <ul class="footer-list">
+                <li><p class="font-semibold">Company</p></li>
+                <li><a href="#" class="hover:text-carolina-purple">About us</a></li>
+                <li><a href="#" class="hover:text-carolina-purple">Pricing plans</a></li>
+                <li><a href="#" class="hover:text-carolina-purple">Our blog</a></li>
+                <li><a href="#" class="hover:text-carolina-purple">Contacts</a></li>
+            </ul>
+            <ul class="footer-list">
+                <li><p class="font-semibold">Support</p></li>
+                <li><a href="#" class="hover:text-carolina-purple">Help center</a></li>
+                <li><a href="#" class="hover:text-carolina-purple">Ask a question</a></li>
+                <li><a href="#" class="hover:text-carolina-purple">Privacy policy</a></li>
+                <li><a href="#" class="hover:text-carolina-purple">Terms & conditions</a></li>
+            </ul>
+            <ul class="footer-list">
+                <li><p class="font-semibold">Neighborhoods in New York</p></li>
+                <li><a href="#" class="hover:text-carolina-purple">Manhattan</a></li>
+                <li><a href="#" class="hover:text-carolina-purple">Central New York City</a></li>
+                <li><a href="#" class="hover:text-carolina-purple">Upper East Side</a></li>
+                <li><a href="#" class="hover:text-carolina-purple">Queens</a></li>
+                <li><a href="#" class="hover:text-carolina-purple">Theater District</a></li>
+                <li><a href="#" class="hover:text-carolina-purple">Midtown</a></li>
+                <li><a href="#" class="hover:text-carolina-purple">SoHo</a></li>
+                <li><a href="#" class="hover:text-carolina-purple">Chelsea</a></li>
+            </ul>
+        </div>
+        <div class="flex justify-between items-center mt-6">
+            <ul class="flex space-x-4">
+                <li><a href="#" class="hover:text-carolina-purple"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="#" class="hover:text-carolina-purple"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="#" class="hover:text-carolina-purple"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                <li><a href="#" class="hover:text-carolina-purple"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="#" class="hover:text-carolina-purple"><ion-icon name="logo-skype"></ion-icon></a></li>
+                <li><a href="#" class="hover:text-carolina-purple"><ion-icon name="mail-outline"></ion-icon></a></li>
+            </ul>
+            <p class="text-xs">&copy; 2023 <a href="https://www.linkedin.com/in/usamaweb/" class="hover:text-carolina-purple">Muhammad Usama</a> <a href="https://github.com/usamaweb" class="hover:text-carolina-purple">Alpha97</a>. All Rights Reserved</p>
+        </div>
+    </div>
+</footer>
+<script src="./js/script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
