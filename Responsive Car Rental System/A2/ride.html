@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Available Rides</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+  <header class="flex justify-between items-center p-5">
+    <div class="flex items-center text-xl font-semibold text-orange-500">
+      <img src="jeep.png" alt="logo" width="50" height="50" />
+      CarRental
+    </div>
+    <nav>
+      <ul class="flex gap-6">
+        <li><a href="home.html" class="text-gray-700 hover:text-orange-500">Home</a></li>
+        <li><a href="ride.html" class="text-gray-700 hover:text-orange-500">Ride</a></li>
+        <li><a href="booking.html" class="text-gray-700 hover:text-orange-500">Booking</a></li>
+        <li><a href="why.html" class="text-gray-700 hover:text-orange-500">Why Us</a></li>
+        <li><a href="contact.html" class="text-gray-700 hover:text-orange-500">Contact</a></li>
+        <li><button class="btn-light">Sign Up</button></li>
+        <li><button class="btn-dark">Sign In</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="how-it-works py-10 text-center bg-orange-50">
+    <h2 class="text-xl mb-5 text-orange-500">How It Works</h2>
+    <div class="steps flex flex-col md:flex-row md:justify-center md:gap-16 gap-4">
+      <div class="step text-lg font-medium"><strong>1.</strong> Choose a Car</div>
+      <div class="step text-lg font-medium"><strong>2.</strong> Fill Booking Form</div>
+      <div class="step text-lg font-medium"><strong>3.</strong> Drive & Enjoy</div>
+    </div>
+  </section>
+  
+
+  <section class="ride-list py-10 px-5">
+    <h2 class="text-center text-orange-500 text-2xl mb-6">Best Services</h2>
+    <div class="flex flex-wrap justify-center gap-6">
+      <div class="ride-card bg-white rounded-lg p-6 text-center shadow-md transition-transform duration-200 hover:transform hover:translate-y-1">
+        <img src="car1.jpg" alt="Sedan" class="w-full max-w-xs mb-4 mx-auto">
+        <h3 class="text-orange-500 text-xl font-bold">Sedan</h3>
+        <p class="text-gray-600 mb-3">Fuel-efficient and city-ready</p>
+        <span class="font-semibold text-gray-800 block mb-3">$45/day</span>
+        <button class="bg-orange-500 text-white py-2 px-6 rounded-lg cursor-pointer font-semibold hover:bg-orange-600">
+          Rent Now
+        </button>
+      </div>
+
+      <div class="ride-card bg-white rounded-lg p-6 text-center shadow-md transition-transform duration-200 hover:transform hover:translate-y-1">
+        <img src="car2.jpg" alt="SUV" class="w-full max-w-xs mb-4 mx-auto">
+        <h3 class="text-orange-500 text-xl font-bold">SUV</h3>
+        <p class="text-gray-600 mb-3">Spacious and strong for road trips</p>
+        <span class="font-semibold text-gray-800 block mb-3">$65/day</span>
+        <button class="bg-orange-500 text-white py-2 px-6 rounded-lg cursor-pointer font-semibold hover:bg-orange-600">
+          Rent Now
+        </button>
+      </div>
+
+      <div class="ride-card bg-white rounded-lg p-6 text-center shadow-md transition-transform duration-200 hover:transform hover:translate-y-1">
+        <img src="car6.jpg" alt="Sports Car" class="w-full max-w-xs mb-4 mx-auto">
+        <h3 class="text-orange-500 text-xl font-bold">Sports</h3>
+        <p class="text-gray-600 mb-3">Stylish and fast for luxury rides</p>
+        <span class="font-semibold text-gray-800 block mb-3">$120/day</span>
+        <button class="bg-orange-500 text-white py-2 px-6 rounded-lg cursor-pointer font-semibold hover:bg-orange-600">
+          Rent Now
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <script src="ride.js"></script>
+</body>
+</html>
