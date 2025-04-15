@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+    color: #1a1a1a;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #fff;
+    color: #1a1a1a;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ff6600;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .btn {
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn.light {
+    background: transparent;
+    color: #ff6600;
+    border: 2px solid #ff6600;
+  }
+  
+  .btn.dark {
+    background: #ff6600;
+    color: white;
+  }
+  
+  /* Main Booking Page Styles */
+  .booking {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background: #f4f4f4;
+  }
+  
+  .booking-form {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .booking-form h1 {
+    font-size: 1.8rem;
+    color: #ff6600;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input,
+  .input-group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .input-group input:focus,
+  .input-group select:focus {
+    border-color: #ff6600;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background: #e65c00;
+  }
+  
+  @media(min-width: 768px) {
+    .booking-form {
+      width: 80%;
+    }
+  }
+  
