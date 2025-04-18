@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  color: #1a1a1a;
+}
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ff6600;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  list-style: none;
+}
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+.btn {
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+.btn.light {
+  background: transparent;
+  color: #ff6600;
+  border: 2px solid #ff6600;
+}
+.btn.dark {
+  background: #ff6600;
+  color: white;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+.hero .text {
+  max-width: 600px;
+}
+.hero h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+.hero h1 span {
+  color: #ff6600;
+}
+.hero p {
+  margin: 15px 0;
+  font-size: 1rem;
+  color: #555;
+}
+.store-buttons img {
+  width: 120px;
+  margin-top: 10px;
+}
+.car-image img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+.booking {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+  background: #f4f4f4;
+  justify-content: center;
+}
+.booking input,
+.submit-btn {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 250px;
+}
+.submit-btn {
+  background: #ff6600;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    padding: 60px 10%;
+  }
+  .car-image {
+    max-width: 500px;
+  }
+}
