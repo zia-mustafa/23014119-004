@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zia Mustafa | BSCS Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css"> 
+    <script>
+       
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'bg-main': 'var(--bg-main)',
+                        'text-primary': 'var(--text-primary)',
+                        'accent-color': '#0097a7', 
+                        'card-bg': 'var(--card-bg)',
+                        'project-text': 'var(--project-text-color)', 
+                    },
+                    fontFamily: { 'mono': ['Consolas', 'Monospace'] },
+                }
+            }
+        }
+    </script>
+    <style>
+        body { padding-top: 60px; }
+    </style>
+</head>
+<body class="bg-bg-main text-text-primary font-mono transition-colors duration-500">
+    
+    <header class="fixed w-full top-0 z-20 bg-white/95 backdrop-blur-sm shadow-md transition-colors duration-500 border-b border-gray-200">
+        <nav class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-accent-color">Zia Mustafa</h1>
+            <ul id="nav-links" class="hidden md:flex space-x-6 text-sm">
+                <li><a href="#about" class="nav-link hover:text-accent-color transition-colors">About</a></li>
+                <li><a href="#skills" class="nav-link hover:text-accent-color transition-colors">Skills</a></li>
+                <li><a href="#projects" class="nav-link hover:text-accent-color transition-colors">Projects</a></li>
+                <li><a href="#contact" class="nav-link hover:text-accent-color transition-colors">Contact</a></li>
+            </ul>
+            <div class="flex items-center space-x-4">
+                <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-100 transition-colors" aria-label="Toggle dark mode">☀️</button>
+                <button id="menu-toggle" class="md:hidden p-2 rounded-md hover:bg-gray-100 transition-colors" aria-label="Toggle navigation">☰</button>
+            </div>
+        </nav>
+        <ul id="mobile-menu" class="hidden md:hidden flex-col items-center pb-4 text-center space-y-2 bg-white/90 border-t border-gray-200">
+            <li><a href="#about" class="nav-link block py-2 text-text-primary hover:text-accent-color">About</a></li>
+            <li><a href="#skills" class="nav-link block py-2 text-text-primary hover:text-accent-color">Skills</a></li>
+            <li><a href="#projects" class="nav-link block py-2 text-text-primary hover:text-accent-color">Projects</a></li>
+            <li><a href="#contact" class="nav-link block py-2 text-text-primary hover:text-accent-color">Contact</a></li>
+        </ul>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-12 space-y-24">
+        <section id="about" class="pt-8">
+            <h2 class="text-4xl font-bold mb-6">Hello, I'm <span class="text-accent-color">Zia Mustafa</span>.</h2>
+            <div class="md:flex items-center md:space-x-10">
+                <figure class="w-32 h-32 rounded-full overflow-hidden mb-6 flex-shrink-0 border-4 border-accent-color shadow-md bg-gray-200">
+                    <img src="https://i.postimg.cc/vZkZSj8F/3154f43f-37f8-48ea-9dd5-ed3f16cc1a11.png" alt="Zia Mustafa Profile" class="w-full h-full object-cover">
+                </figure>
+                <div>
+                    <p class="text-lg leading-relaxed mb-2">
+                       I’m a BSCS student (Roll No: 23014119-004) at the University of Gujrat. I believe in writing clean, practical code and creating simple solutions for complex problems. I enjoy building projects that connect databases with interactive web features.
+                    </p>
+                    <p class="text-sm text-gray-500">
+                        Currently focused on C# development and designing reliable relational databases.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <hr class="border-gray-200">
+
+        <section id="skills" class="pt-8">
+            <h2 class="text-3xl font-bold mb-8">🛠️ Core Skills</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="skill-card p-4 rounded-lg border border-gray-300 skill-fade-effect">HTML / CSS / Tailwind</div>
+                <div class="skill-card p-4 rounded-lg border border-gray-300 skill-fade-effect">JavaScript</div>
+                <div class="skill-card p-4 rounded-lg border border-gray-300 skill-fade-effect">C# / Java</div>
+                <div class="skill-card p-4 rounded-lg border border-gray-300 skill-fade-effect">SQL / DBMS</div>
+                <div class="skill-card p-4 rounded-lg border border-gray-300 skill-fade-effect">Data Structures</div>
+                <div class="skill-card p-4 rounded-lg border border-gray-300 skill-fade-effect">Git & Version Control</div>
+            </div>
+        </section>
+
+        <hr class="border-gray-200">
+
+        <section id="projects" class="pt-8">
+            <h2 class="text-3xl font-bold mb-8">📂 Recent Projects</h2>
+            <div class="space-y-8">
+                
+                <article class="project-card p-6 rounded-xl shadow-lg border border-gray-200 transition-all duration-300 hover-project-lift">
+                    <h3 class="text-xl font-bold mb-2 text-accent-color">Car Rental System</h3>
+                    <p class="text-base mb-4 text-project-text">A web application that handles inventory, booking, and user management. It features a responsive design and includes front-end form validation for better usability.</p>
+                    <a href="#" target="_blank" class="text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">View Project →</a>
+                </article>
+
+                <article class="project-card p-6 rounded-xl shadow-lg border border-gray-200 transition-all duration-300 hover-project-lift">
+                    <h3 class="text-xl font-bold mb-2 text-accent-color">School Database Management System</h3>
+                    <p class="text-base mb-4 text-project-text">A database system built with SQL to manage administrative tasks and student records. It focuses on data accuracy, consistency, and efficient query handling.</p>
+                    <a href="#" target="_blank" class="text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">View Project →</a>
+                </article>
+
+                <article class="project-card p-6 rounded-xl shadow-lg border border-gray-200 transition-all duration-300 hover-project-lift">
+                    <h3 class="text-xl font-bold mb-2 text-accent-color">Contact Management System (COAL)</h3>
+                    <p class="text-base mb-4 text-project-text">A console-based application built with C/C++ that uses file handling and basic data structures to manage and organize contacts efficiently.</p>
+                    <a href="#" target="_blank" class="text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">View Project →</a>
+                </article>
+            </div>
+        </section>
+
+        <hr class="border-gray-200">
+
+        <section id="contact" class="pt-8">
+            <h2 class="text-3xl font-bold mb-8">✉️ Get In Touch</h2>
+            <form class="bg-card-bg p-8 rounded-xl shadow-lg max-w-lg mx-auto border border-gray-100 transition-colors duration-500">
+                <div class="mb-4"><label for="name" class="block text-sm font-medium mb-1">Name</label><input type="text" id="name" name="name" class="w-full p-2 border rounded-md focus:border-accent-color focus:ring-1 focus:ring-accent-color"></div>
+                <div class="mb-4"><label for="email" class="block text-sm font-medium mb-1">Email</label><input type="email" id="email" name="email" class="w-full p-2 border rounded-md focus:border-accent-color focus:ring-1 focus:ring-accent-color"></div>
+                <div class="mb-6"><label for="message" class="block text-sm font-medium mb-1">Message</label><textarea id="message" name="message" rows="4" class="w-full p-2 border rounded-md focus:border-accent-color focus:ring-1 focus:ring-accent-color"></textarea></div>
+                <button type="submit" class="w-full py-2 px-4 bg-accent-color text-white font-semibold rounded-md hover:opacity-80 transition-opacity">Send Message</button>
+            </form>
+        </section>
+        
+    </main>
+
+    <footer class="mt-16 py-6 bg-gray-800 text-white text-center text-xs">
+        <p>Coded simply by Zia Mustafa (23014119-004). &copy; 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
